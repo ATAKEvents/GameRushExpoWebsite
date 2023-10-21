@@ -1,0 +1,100 @@
+@import url("fonts/monotalic/stylesheet.css");
+
+html,
+body {
+    overflow: hidden !important;
+
+    background: #3276BF;
+    background-image: url('./assets/backdrop.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 200%;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Monotalic';
+    text-shadow: 1px 1px 2px black;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header {
+        width: 150%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .header {
+        width: 150%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .header {
+        width: 150%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .header {
+        width: 150%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    html,
+    body {
+        background-size: 150%;
+    }
+
+    .header {
+        width: 70%;
+        top: 48%;
+    }
+}
